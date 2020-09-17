@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <title>Galeria de imágenes</title>
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/estilos.css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="container" id="inicio">
+    <h1>Busqueda de gatos por categoria o por raza</h1>
+    <h3>Pulsa el botón para empezar a buscar gatos</h3>
+    <button type="button" class="btn btn-info" id="boton-inicio">EMPEZAR</button>
+  </div>
+  <div class="container" id="buscador" style="display: none;">
+    <h1>Busqueda de gatos por categoria o por raza</h1>
+    <p><b>Selecciona la categoria o la raza y pulsa el botón para que aparezcan... <u>¡más GATOS!</u></b></p>
+    <label for="categorias">Elige una categoria:&nbsp;</label><select name="categorias" id="categorias"></select>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-info" id="boton1" onclick="botonCategorias()">DAME GATOS POR CATEGORIA</button>
+    <br><br><br>
+    <label for="razas">Elige una raza:&nbsp;</label><select name="razas" id="razas"></select>
+    &nbsp;&nbsp;
+    <button type="button" class="btn btn-info" id="boton2" onclick="botonRazas()">DAME GATOS POR RAZA</button>
+
+    <div class="container" id="error"></div>
+    <div class="container d-flex mt-3 p-3 align-items-center justify-content-center flex-wrap" id="gatos">
+    </div>
+
+    <div class="container d-flex mt-3 justify-content-center">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <input type="text" hidden id="numeropagina" value="0"></input>
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+  </script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
